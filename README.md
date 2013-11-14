@@ -80,9 +80,9 @@ Patterns
 --------
 (You just know that you are going to be asked to implement a Singleton eventually so best you know how to do it. It's worth being able to describe a few more as well)  
 
-    public enum Singleton {
-        INSTANCE;
-    }
+    public enum Singleton {  
+        INSTANCE;  
+    }  
 
 Further reading
 ===============
