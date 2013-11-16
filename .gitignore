@@ -1,0 +1,9 @@
+# VIM Temp Files #
+##################
+.netrwhist
+*.swp
+
+# IntelliJ IDEA Files #
+#######################
+.idea
+*.iml
