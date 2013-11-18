@@ -95,9 +95,9 @@ Buckets, LinkedList, hashcode, equals
 ### Algorithms
 __"Write a method that implements a factorial (The product of all the positive integers from 1 to a given number. Factorial 0 is 1."__  
 
-   public static int factorial(int f) {
-      return ((f == 0) ? 1 : f * factorial(f - 1));
-   }
+    public static int factorial(int f) {
+        return ((f == 0) ? 1 : f * factorial(f - 1));
+    }
 
 ### Error Handling
 __"What is the different between a checked and an unchecked exception?"__  
@@ -117,13 +117,13 @@ You talk to Mr Josh Bloch:
 
 __"How would you lazy load the instance in a singleton?"__  
 
-   private static class LazySomethingHolder {
-      public static Something something = new Something();
-   }
-   
-   public static Something getInstance() {
-      return LazySomethingHolder.something;
-   }
+    private static class LazySomethingHolder {
+        public static Something something = new Something();
+    }
+    
+    public static Something getInstance() {
+        return LazySomethingHolder.something;
+    }
 
 ### Testing
 __"Could you name some mocking frameworks?"__  
