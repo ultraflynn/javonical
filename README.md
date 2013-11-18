@@ -31,6 +31,8 @@ You need to ensure that it cannot be changed either by enforcement (Make the fie
 "What is the different between StringBuffer and StringBuilder?"  
 This here because the difference is that StringBuffer is synchronized and StringBuilder is not.
 
+"Explain what a CountDownLatch is"   
+
 "What does the 'volatile' keyword do when found on a field?"  
 
 "Without using the classes in the java.util.concurrency package implement a blocking queue"  
@@ -41,9 +43,10 @@ First step is to head on over to Github and learn [this](https://gist.github.com
 
 hashcode() and equals()
 -----------------------
-(This is *the* standard Java interview question so you need to be able to get it right. You need to be able to answer this without any waffle)  
+(This is *the* standard Java interview question so you need to be able to get it right. You need to be able to answer this without any waffle)
+
 "What is the contract between hashcode and equals?"  
-"Explain how hashcode and equals are used when doing a "put" into a hash map?"  
+"Explain how hashcode and equals are used when doing a "put" into a hash map?"     
 "What property must the class have to be used as the key in a Map?"  
 It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
 
@@ -61,24 +64,26 @@ Trick question, you can't. System.gc() will suggest to the JVM that it should ru
 
 Generics
 --------
-"Could you tell me what is type erasure is?"
+"Could you tell me what is type erasure is?"   
 
 "Would a class compile if it had 2 methods on which both had the same return value and both took a single parameter, one being List<String> and the other being List<Date>."  
 No. Type erasure would removed the type of the List in both methods leaving both methods with the same signature.
 
-"What is the difference between 'super' and 'extends'?"
-PECS.
+"What is the difference between 'super' and 'extends'?"   
+PECS. Producer Extends, Consumer Super.
 
 Basics
 ------
 "What visibility modifiers can be added to a field and what is the order of their visibility?"  
 Most visible first: public, protected, package private, private.
 
+"What does the transient keyword do?"   
+
 Collections and Data Structures 
 -------------------------------
-"What are the different kinds of collection and name some of the implementations?"  
-Map, Set, List...
-ArrayList, HashMap, HashSet, CopyOnWriteArrayList, ConcurrentHashMap, Vector, Hashtable
+"Name the 4 base collection interfaces and some of the implementations."  
+Map, Set, List, Queue...   
+ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentHashMap, Vector, Hashtable, LinkedList, Stack, TreeMap, TreeSet, LinkedHashMap, LinkedHashSet, EnumMap...   
 
 "What do you understand Big O notation to be?"  
 "How is a HashMap implemented?"  
@@ -110,6 +115,7 @@ Testing
 EasyMock, JMock, Mockito.
 
 "Describe the benefits of using mocking framework?"  
+"Explain why dependency injection is important when mocking"   
 
 Further reading
 ===============
