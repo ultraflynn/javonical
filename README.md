@@ -70,7 +70,7 @@ __"Could you tell me what is type erasure is?"__
 __"Would a class compile if it had 2 methods on which both had the same return value and both took a single parameter, one being `List<String>` and the other being `List<Date>`."__  
 No. Type erasure would removed the type of the List in both methods leaving both methods with the same signature.
 
-__"What is the difference between 'super' and 'extends'?"__   
+__"What is the difference between 'super' and 'extends'?"__  
 PECS. Producer Extends, Consumer Super.
 
 ### Basics
@@ -78,6 +78,8 @@ __"What visibility modifiers can be added to a field and what is the order of th
 Most visible first: public, protected, package private, private.
 
 __"What does the transient keyword do?"__  
+Stops that field from being serialized.
+
 __"What is an enum and how do you use one?"__  
 
 ### Collections and Data Structures
@@ -87,7 +89,7 @@ ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, Concurre
 
 __"What do you understand Big O notation to be?"__  
 A way of denoting how well an algorithm performs. A measure of complexity or performance.  
-[Beginners Guide](http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
+Check out this [Beginners Guide](http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
 
 __"How is a HashMap implemented?"__  
 Buckets, LinkedList, hashcode, equals
@@ -132,8 +134,10 @@ EasyMock, JMock, Mockito.
 __"Describe the benefits of using mocking framework?"__  
 __"Explain why dependency injection is important when mocking"__   
 
-Further reading
-===============
+## Further reading
 If I had to pick up just one book to revise from it would be Java Concurrency in Practice by xxxxxxx et al. If you can nail the multithreading part of the test then it goes a hell of a long way.
 
 Another book you really should have read is Effective Java by Josh Bloch. Reading that book totally changes the way in which you code Java.
+
+## Contributors
+Matt Biggin (<matthew.biggin@gmail.com>)
