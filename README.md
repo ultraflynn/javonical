@@ -118,7 +118,7 @@ __"Explain what the 'finally' block does"__
 
 __"Could you explain what a design pattern is?"__  
 __"What are some of the most well known patterns?"__  
-__"When is it a good time to use a pattern discuss?"__
+__"When is it a good time to use a pattern discuss?"__  
 This is designed to get you to talk about patterns in design.  Should you always use patterns?  They add complexity!  Sometimes overkill etc.  
 __"How do you implement a Singleton?"__  
 You talk to Mr Josh Bloch:  
