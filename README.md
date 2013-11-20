@@ -1,6 +1,6 @@
 Javonical
 =========
-As a professional freelance programmer I have sat through (and conducted) my fair share of Java technical tests. They are usually the first step when applying for a role so you have make sure that you are familiar with what answers are expected. Usually this means digging out some books and doing some revision. What I have found is that the topics covered are almost always the same. I've also found that it's really to forget all the areas that can come up.
+As a professional freelance programmer I have sat through (and conducted) my fair share of Java technical tests. They are usually the first step when applying for a role so you have make sure that you are familiar with what answers are expected. Usually this means digging out some books and doing some revision. What I have found is that the topics covered are almost always the same. I've also found that it's really easy to forget all the areas that can come up.
 
 Javonical is here help. It is the canonical collection of Java technical questions to save you hunting around lots of sources before that important first interview.
 
