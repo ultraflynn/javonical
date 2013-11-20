@@ -60,7 +60,7 @@ It must be immutable otherwise the wrong bucket will be searched during a lookup
 __"How does an object become eligible for garbage collection?"__  
 __"There are several different garbage collection implementations, describe the one that you are most familiar with."__  
 
-__"Describe how the memory organised within the JVM and how objects are moved around it"__  
+__"Describe how the memory organised within the JVM and how objects are moved around inside it"__  
 __"How can you ensure that an object is garbage collected immediately?"__  
 Trick question, you can't. System.gc() will suggest to the JVM that it should run the garbage collection but it is under no obligation to actually do it.
 
