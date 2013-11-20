@@ -101,7 +101,7 @@ __"Write a method that implements a factorial (The product of all the positive i
         return ((f == 0) ? 1 : f * factorial(f - 1));
     }
     
-__"Write some methods to traverce a tree or graph"__
+__"Write some methods to traverse a tree or graph"__
 This comes up quite a bit.  (MH - Several times for me now).  When it does its a killer if you have not got the principles nailed in advance.
 Your answer will depend on what they are asking you to operate on to some extent but the principles are easy to learn.
 Good starting places include:
