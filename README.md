@@ -105,9 +105,9 @@ __"Write some methods to traverse a tree or graph"__
 This comes up quite a bit.  (MH - Several times for me now).  When it does its a killer if you have not got the principles nailed in advance.
 Your answer will depend on what they are asking you to operate on to some extent but the principles are easy to learn.
 Good starting places include:
-[DFS and BFS](http://www.codeproject.com/Articles/32212/Introduction-to-Graph-with-Breadth-First-Search-BF)
-[BFS](http://www.cs.bu.edu/teaching/c/tree/breadth-first/)
-[BFS](http://java.dzone.com/articles/algorithm-week-graph-breadth)
+* [DFS and BFS](http://www.codeproject.com/Articles/32212/Introduction-to-Graph-with-Breadth-First-Search-BF)
+* [BFS](http://www.cs.bu.edu/teaching/c/tree/breadth-first/)
+* [BFS](http://java.dzone.com/articles/algorithm-week-graph-breadth)
 
 ### Error Handling
 __"What is the different between a checked and an unchecked exception?"__  
@@ -150,5 +150,5 @@ If I had to pick up just one book to revise from it would be Java Concurrency in
 Another book you really should have read is Effective Java by Josh Bloch. Reading that book totally changes the way in which you code Java.
 
 ## Contributors
-Matt Biggin (<matthew.biggin@gmail.com>)
-[Martin Harris](http://martinaharris.com) 
+* Matt Biggin (<matthew.biggin@gmail.com>)
+* [Martin Harris](http://martinaharris.com) 
