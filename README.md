@@ -1,6 +1,6 @@
 Javonical
 =========
-As a professional freelance programmer I have sat through (and conducted) my fair share of Java technical tests. They are usually the first step when applying for a role so you have make sure that you are familiar with what answers are expected. Usually this means digging out some books and doing some revision. What I have found is that the topics covered are almost always the same. I've also found that it's really easy to forget all the areas that can come up.
+As a professional freelance programmer I have sat through (and conducted) my fair share of Java technical tests. They are usually the first step when applying for a role so you have make sure that you are familiar with what answers are expected. Usually this means digging out some books and doing some revision. What I have found is that the topics covered are almost always the same. I've also found that it's really easy to forget some of the areas that can come up.
 
 Javonical is here help. It is the canonical collection of Java technical questions to save you hunting around lots of sources before that important first interview.
 
@@ -100,16 +100,26 @@ __"Write a method that implements a factorial (The product of all the positive i
     public static int factorial(int f) {
         return ((f == 0) ? 1 : f * factorial(f - 1));
     }
+    
+__"Write some methods to traverce a tree or graph"__
+This comes up quite a bit.  (MH - Several times for me now).  When it does its a killer if you have not got the principles nailed in advance.
+Your answer will depend on what they are asking you to operate on to some extent but the principles are easy to learn.
+Good starting places include:
+[DFS and BFS](http://www.codeproject.com/Articles/32212/Introduction-to-Graph-with-Breadth-First-Search-BF)
+[BFS](http://www.cs.bu.edu/teaching/c/tree/breadth-first/)
+[BFS](http://java.dzone.com/articles/algorithm-week-graph-breadth)
 
 ### Error Handling
 __"What is the different between a checked and an unchecked exception?"__  
 __"Explain what the 'finally' block does"__  
 
 ### Patterns
-(You just know that you are going to be asked to implement a Singleton eventually so best you know how to do it. It's worth being able to describe a few more as well)  
+(You just know that you are going to be asked to implement a Singleton eventually so best you know how to do it. It's worth being able to describe a few more as well.)  
 
 __"Could you explain what a design pattern is?"__  
-__"What are some of the most well known patterns?"__  
+__"What are some of the most well known patterns?"__
+__"When is it a good time to use a pattern discuss?"__
+This is designed to get you to talk about patterns in design.  Should you always use patterns?  They add complexity!  Sometimes overkill etc.  
 __"How do you implement a Singleton?"__  
 You talk to Mr Josh Bloch:  
 
@@ -129,15 +139,16 @@ __"How would you lazy load the instance in a singleton?"__
 
 ### Testing
 __"Could you name some mocking frameworks?"__  
-EasyMock, JMock, Mockito.
+[EasyMock](http://easymock.org/), [JMock](http://jmock.org/), [Mockito](https://code.google.com/p/mockito/), [JMockit](https://code.google.com/p/jmockit/)
 
 __"Describe the benefits of using mocking framework?"__  
 __"Explain why dependency injection is important when mocking"__   
 
 ## Further reading
-If I had to pick up just one book to revise from it would be Java Concurrency in Practice by xxxxxxx et al. If you can nail the multithreading part of the test then it goes a hell of a long way.
+If I had to pick up just one book to revise from it would be Java Concurrency in Practice by Brian Goetz et al. If you can nail the multithreading part of the test then it goes a hell of a long way.
 
 Another book you really should have read is Effective Java by Josh Bloch. Reading that book totally changes the way in which you code Java.
 
 ## Contributors
 Matt Biggin (<matthew.biggin@gmail.com>)
+[Martin Harris](http://martinaharris.com) 
