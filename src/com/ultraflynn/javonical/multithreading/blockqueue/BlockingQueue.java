@@ -4,6 +4,5 @@ public final class BlockingQueue
 {
     public static void main(String[] args)
     {
-        java.util.List
     }
 }
