@@ -1,11 +1,30 @@
 package com.ultraflynn.javonical.multithreading.blockqueue;
 
-import java.util.concurrent.Callable;
-
-public final class Producer implements Callable
+public final class Producer
 {
-  public Object call() throws Exception
+  private final BlockingQueue<Message> queue;
+  private final int messageCount;
+  private final int consumerCount;
+  private final long delay;
+
+  public Producer(BlockingQueue<Message> queue, int messageCount, int consumerCount,
+                  long delay)
   {
-    return null;  //To change body of implemented methods use File | Settings | File Templates.
+    this.queue = queue;
+    this.messageCount = messageCount;
+    this.consumerCount = consumerCount;
+    this.delay = delay;
+  }
+
+  public void start() throws InterruptedException
+  {
+    for (int i = 0; i < messageCount; i++) {
+      queue.push(Message.valueOf("message-" + i));
+      Thread.sleep(delay);
+    }
+
+    for (int i = 0; i < consumerCount; i++) {
+      queue.push(Message.POISON);
+    }
   }
 }
