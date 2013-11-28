@@ -42,7 +42,6 @@ First step is to head on over to Github and learn [this](https://gist.github.com
 * Why is the wait() surrounded by a while loop?
 * Why is notifyAll() used rather than notify()?
 
-[Object.wait()](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#wait())   
 A thread can also wake up without being notified, interrupted, or timing out, a so-called spurious wakeup. While this will rarely occur in practice, applications must guard against it by testing for the condition that should have caused the thread to be awakened, and continuing to wait if the condition is not satisfied. In other words, waits should always occur in loops, like this one:
 
      synchronized (obj) {
