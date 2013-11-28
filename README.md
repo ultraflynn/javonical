@@ -151,7 +151,7 @@ __"Describe the benefits of using mocking framework?"__
 __"Explain why dependency injection is important when mocking"__   
 
 ## Further reading
-If I had to pick up just one book to revise from it would be Java Concurrency in Practice by TODO et al. If you can nail the multithreading part of the test then it goes a hell of a long way.
+If I had to pick up just one book to revise from it would be Java Concurrency in Practice by Brian Goetz et al. If you can nail the multithreading part of the test then it goes a hell of a long way.
 
 Another book you really should have read is Effective Java by Josh Bloch. Reading that book totally changes the way in which you code Java.
 
