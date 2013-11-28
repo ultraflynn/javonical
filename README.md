@@ -17,6 +17,7 @@ __"Hi, thanks for coming today. Lets start with a few technical questions..."__
 (Lets not mess about, multithreading is the single most common subject that will come up. Nevermind that in 90% of cases the role itself wont include any multithreading at all)
 
 __"How do you start a new thread?"__  
+__"What does the synchronized keyword do?"__  
 __"What is the difference between a Runnable and a Callable?"__  
 __"Could you tell me what a Future is?"__  
 __"How do you make a class thread-safe?"__  
@@ -41,6 +42,17 @@ First step is to head on over to Github and learn [this](https://gist.github.com
 * Why is the wait() surrounded by a while loop?
 * Why is notifyAll() used rather than notify()?
 
+[Object.wait()](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#wait())   
+A thread can also wake up without being notified, interrupted, or timing out, a so-called spurious wakeup. While this will rarely occur in practice, applications must guard against it by testing for the condition that should have caused the thread to be awakened, and continuing to wait if the condition is not satisfied. In other words, waits should always occur in loops, like this one:
+
+     synchronized (obj) {
+         while (<condition does not hold>)
+             obj.wait(timeout);
+         ... // Perform action appropriate to condition
+     }
+
+[notify() vs notifyAll()](http://stackoverflow.com/questions/37026/java-notify-vs-notifyall-all-over-again)   
+
 __"How would you go about determining what is causing a deadlock?"__
 
 __"What do you understand by the term 'happens before'?"__  
@@ -55,7 +67,7 @@ __"What property must the class have to be used as the key in a Map?"__
 It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
 
 ### Garbage Collection
-(Another interview classic and it helps to have a picture in mind to help)
+(Another interview classic and it helps to be able to draw a picture describing Eden Space, 2x Survivor Spaces, Old Gen, Perm Gen)
 
 __"How does an object become eligible for garbage collection?"__  
 __"There are several different garbage collection implementations, describe the one that you are most familiar with."__  
@@ -74,11 +86,15 @@ __"What is the difference between 'super' and 'extends'?"__
 PECS. Producer Extends, Consumer Super.
 
 ### Basics
+__"What are the differences between instances, classes, abstract classes and interfaces?"__  
 __"What visibility modifiers can be added to a field and what is the order of their visibility?"__  
 Most visible first: public, protected, package private, private.
 
 __"What does the transient keyword do?"__  
 Stops that field from being serialized.
+
+__"What does the static keyword mean, and where can it be used?"__
+Variables, method, classes and blocks.
 
 __"What is an enum and how do you use one?"__  
 
@@ -128,6 +144,7 @@ __"How would you lazy load the instance in a singleton?"__
     }
 
 ### Testing
+__"How do you test your code?"__  
 __"Could you name some mocking frameworks?"__  
 EasyMock, JMock, Mockito.
 
