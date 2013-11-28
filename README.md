@@ -37,7 +37,7 @@ __"Explain what a CountDownLatch is"__
 __"What does the 'volatile' keyword do when found on a field and how would you use it?"__  
 
 __"Without using the classes in the java.util.concurrency package implement a blocking queue"__  
-First step is to head on over to Github and learn [this](https://gist.github.com/dougnukem/1241317). The critical things to be able to able to answer are:
+First step is to look at the implementation I've put together [here](https://github.com/ultraflynn/javonical/tree/master/src/com/ultraflynn/javonical/multithreading/blockqueue). Look at the Producer and Consumer and see how they use the blocking queue). The critical things to be able to able to answer are:
 * Why are both methods synchronized?
 * Why is the wait() surrounded by a while loop?
 * Why is notifyAll() used rather than notify()?
