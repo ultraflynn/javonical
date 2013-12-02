@@ -13,6 +13,43 @@ Enough explanation lets begin.
 
 __"Hi, thanks for coming today. Lets start with a few technical questions..."__   
 
+### Basics
+__"What are the differences between instances, classes, abstract classes and interfaces?"__  
+__"What visibility modifiers can be added to a field and what is the order of their visibility?"__  
+Most visible first: public, protected, package private, private.
+
+__"What does the transient keyword do?"__  
+Stops that field from being serialized.
+
+__"What does the static keyword mean, and where can it be used?"__
+Variables, method, classes and blocks.
+
+__"What is an enum and how do you use one?"__  
+
+### Collections and Data Structures
+__"Name the 4 base collection interfaces and some of the implementations."__  
+Map, Set, List, Queue...   
+ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentHashMap, Vector, Hashtable, LinkedList, Stack, TreeMap, TreeSet, LinkedHashMap, LinkedHashSet, EnumMap...   
+
+__"What do you understand Big O notation to be?"__  
+A way of denoting how well an algorithm performs. A measure of complexity or performance.  
+Check out this [Beginners Guide](http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
+
+__"How is a HashMap implemented?"__  
+Buckets, LinkedList, hashcode, equals
+
+### Error Handling
+__"What is the different between a checked and an unchecked exception?"__  
+__"Explain what the 'finally' block does"__  
+
+### hashcode() and equals()
+(This is *the* standard Java interview question so you need to be able to get it right. You need to be able to answer this without any waffle)
+
+__"What is the contract between hashcode and equals?"__  
+__"Explain how hashcode and equals are used when doing a "__put" into a hash map?"     
+__"What property must the class have to be used as the key in a Map?"__  
+It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
+
 ### Multithreading
 (Lets not mess about, multithreading is the single most common subject that will come up. Nevermind that in 90% of cases the role itself wont include any multithreading at all)
 
@@ -57,14 +94,6 @@ __"How would you go about determining what is causing a deadlock?"__
 __"What do you understand by the term 'happens before'?"__  
 Java Memory Model, [JSR-133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html)
 
-### hashcode() and equals()
-(This is *the* standard Java interview question so you need to be able to get it right. You need to be able to answer this without any waffle)
-
-__"What is the contract between hashcode and equals?"__  
-__"Explain how hashcode and equals are used when doing a "__put" into a hash map?"     
-__"What property must the class have to be used as the key in a Map?"__  
-It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
-
 ### Garbage Collection
 (Another interview classic and it helps to be able to draw a picture describing Eden Space, 2x Survivor Spaces, Old Gen, Perm Gen)
 
@@ -82,32 +111,9 @@ __"Would a class compile if it had 2 methods on which both had the same return v
 No. Type erasure would removed the type of the List in both methods leaving both methods with the same signature.
 
 __"What is the difference between 'super' and 'extends'?"__  
-PECS. Producer Extends, Consumer Super.
-
-### Basics
-__"What are the differences between instances, classes, abstract classes and interfaces?"__  
-__"What visibility modifiers can be added to a field and what is the order of their visibility?"__  
-Most visible first: public, protected, package private, private.
-
-__"What does the transient keyword do?"__  
-Stops that field from being serialized.
-
-__"What does the static keyword mean, and where can it be used?"__
-Variables, method, classes and blocks.
-
-__"What is an enum and how do you use one?"__  
-
-### Collections and Data Structures
-__"Name the 4 base collection interfaces and some of the implementations."__  
-Map, Set, List, Queue...   
-ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentHashMap, Vector, Hashtable, LinkedList, Stack, TreeMap, TreeSet, LinkedHashMap, LinkedHashSet, EnumMap...   
-
-__"What do you understand Big O notation to be?"__  
-A way of denoting how well an algorithm performs. A measure of complexity or performance.  
-Check out this [Beginners Guide](http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
-
-__"How is a HashMap implemented?"__  
-Buckets, LinkedList, hashcode, equals
+PECS. Producer Extends, Consumer Super.  
+The first says that it's "some type which is a subclass of E"; the second says that it's "some type which is an ancestor of E". (In both cases E itself is okay.)
+[SO](http://stackoverflow.com/questions/1368166/what-is-a-difference-between-super-e-and-extends-e)
 
 ### Algorithms
 __"Write a method that implements a factorial (The product of all the positive integers from 1 to a given number. Factorial 0 is 1."__  
@@ -115,10 +121,6 @@ __"Write a method that implements a factorial (The product of all the positive i
     public static int factorial(int f) {
         return ((f == 0) ? 1 : f * factorial(f - 1));
     }
-
-### Error Handling
-__"What is the different between a checked and an unchecked exception?"__  
-__"Explain what the 'finally' block does"__  
 
 ### Patterns
 (You just know that you are going to be asked to implement a Singleton eventually so best you know how to do it. It's worth being able to describe a few more as well)  
