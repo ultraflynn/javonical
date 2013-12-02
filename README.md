@@ -112,7 +112,7 @@ No. Type erasure would removed the type of the List in both methods leaving both
 
 __"What is the difference between 'super' and 'extends'?"__  
 PECS. Producer Extends, Consumer Super.  
-The first says that it's "some type which is a subclass of E"; the second says that it's "some type which is an ancestor of E". (In both cases E itself is okay.)
+The first says that it's "some type which is a subclass of E"; the second says that it's "some type which is an ancestor of E". (In both cases E itself is okay.)  
 [SO](http://stackoverflow.com/questions/1368166/what-is-a-difference-between-super-e-and-extends-e)
 
 ### Algorithms
