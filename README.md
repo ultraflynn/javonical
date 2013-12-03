@@ -33,7 +33,7 @@ ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, Concurre
 
 __"What do you understand Big O notation to be?"__  
 A way of denoting how well an algorithm performs. A measure of complexity or performance.  
-Check out this [Beginners Guide](http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
+Check out my [guide](https://github.com/ultraflynn/javonical/wiki/Big-O-Notation)
 
 __"How is a HashMap implemented?"__  
 Buckets, LinkedList, hashcode, equals
