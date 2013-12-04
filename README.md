@@ -65,11 +65,13 @@ __"Explain what steps you can take to make a class immutable"__
 You need to ensure that it cannot be changed either by enforcement (Make the fields final, values set in the constructor and if they are not primitive then the object being referred to cannot change either) or by convention (Simply agree that objects will never be changed).
 
 __"What are the options for handling InterruptedException?"__  
-* Rethrow it. That may not be possible if it's in a Runnable though, for instance.
-* Handle it with some specific logic that makes sense.
-* Interrupt the thread and move on.
+* Rethrow it. That may not be possible if it's in a Runnable though, for instance.  
+* Handle it with some specific logic that makes sense.  
+* Interrupt the thread and move on.  
 
-     Thread.currentThread().interrupt();
+```
+Thread.currentThread().interrupt();
+```
 
 Do not just log and ignore the exception.
 
@@ -81,6 +83,7 @@ This here because the difference is that StringBuffer is synchronized and String
 __"Explain what a CountDownLatch is"__   
 
 __"What does the 'volatile' keyword do when found on a field and how would you use it?"__  
+[Interest article](http://www.ibm.com/developerworks/java/library/j-jtp06197/)
 
 __"Without using the classes in the java.util.concurrency package implement a blocking queue"__  
 First step is to look at the implementation I've put together [here](https://github.com/ultraflynn/javonical/tree/master/src/com/ultraflynn/javonical/multithreading/blockqueue). Look at the Producer and Consumer and see how they use the blocking queue). The critical things to be able to able to answer are:
@@ -165,6 +168,8 @@ __"Explain why dependency injection is important when mocking"__
 If I had to pick up just one book to revise from it would be Java Concurrency in Practice by Brian Goetz et al. If you can nail the multithreading part of the test then it goes a hell of a long way.
 
 Another book you really should have read is Effective Java by Josh Bloch. Reading that book totally changes the way in which you code Java.
+
+[Top-15 Investment Bank Threading Questions](http://javarevisited.blogspot.sg/2011/07/java-multi-threading-interview.html)
 
 ## Contributors
 Matt Biggin (<matthew.biggin@gmail.com>)
