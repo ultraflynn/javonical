@@ -64,6 +64,15 @@ An immutable class means that it cannot change.
 __"Explain what steps you can take to make a class immutable"__  
 You need to ensure that it cannot be changed either by enforcement (Make the fields final, values set in the constructor and if they are not primitive then the object being referred to cannot change either) or by convention (Simply agree that objects will never be changed).
 
+__"What are the options for handling InterruptedException?"__  
+* Rethrow it. That may not be possible if it's in a Runnable though, for instance.
+* Handle it with some specific logic that makes sense.
+* Interrupt the thread and move on.
+
+    Thread.currentThread().interrupt();
+
+Do not just log and ignore the exception.
+
 __"Explain what a monitor is and how they are used?"__  
 
 __"What is the different between StringBuffer and StringBuilder?"__  
