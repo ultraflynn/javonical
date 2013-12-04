@@ -46,7 +46,7 @@ __"Explain what the 'finally' block does"__
 (This is *the* standard Java interview question so you need to be able to get it right. You need to be able to answer this without any waffle)
 
 __"What is the contract between hashcode and equals?"__  
-__"Explain how hashcode and equals are used when doing a "__put" into a hash map?"     
+__"Explain how hashcode and equals are used when doing a "put" into a hash map?"__  
 __"What property must the class have to be used as the key in a Map?"__  
 It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
 
@@ -111,6 +111,7 @@ Java Memory Model, [JSR-133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-13
 
 __"How does an object become eligible for garbage collection?"__  
 __"There are several different garbage collection implementations, describe the one that you are most familiar with."__  
+There are basically 3; Serial (for single core and no pause time requirements), Parallel (peak performance and no pause time requirements) and ConcurrentMarkSweep (overall throughput and GC pauses of under a second).  
 
 __"Describe how the memory organised within the JVM and how objects are moved around inside it"__  
 __"How can you ensure that an object is garbage collected immediately?"__  
