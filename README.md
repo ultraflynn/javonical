@@ -80,10 +80,10 @@ __"Explain what a monitor is and how they are used?"__
 __"What is the different between StringBuffer and StringBuilder?"__  
 This here because the difference is that StringBuffer is synchronized and StringBuilder is not.
 
-__"Explain what a CountDownLatch is"__   
+__"Explain what a CountDownLatch is and how it differs from a CyclicBarrier"__   
 
 __"What does the 'volatile' keyword do when found on a field and how would you use it?"__  
-[Interest article](http://www.ibm.com/developerworks/java/library/j-jtp06197/)
+[Interesting article](http://www.ibm.com/developerworks/java/library/j-jtp06197/)
 
 __"Without using the classes in the java.util.concurrency package implement a blocking queue"__  
 First step is to look at the implementation I've put together [here](https://github.com/ultraflynn/javonical/tree/master/src/com/ultraflynn/javonical/multithreading/blockqueue). Look at the Producer and Consumer and see how they use the blocking queue). The critical things to be able to able to answer are:
@@ -125,7 +125,7 @@ No. Type erasure would removed the type of the List in both methods leaving both
 __"What is the difference between 'super' and 'extends'?"__  
 PECS. Producer Extends, Consumer Super.  
 The first says that it's "some type which is a subclass of E"; the second says that it's "some type which is an ancestor of E". (In both cases E itself is okay.)  
-[SO](http://stackoverflow.com/questions/1368166/what-is-a-difference-between-super-e-and-extends-e)
+[StackOverflow Question](http://stackoverflow.com/questions/1368166/what-is-a-difference-between-super-e-and-extends-e)
 
 ### Algorithms
 __"Write a method that implements a factorial (The product of all the positive integers from 1 to a given number. Factorial 0 is 1."__  
