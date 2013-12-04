@@ -69,7 +69,7 @@ __"What are the options for handling InterruptedException?"__
 * Handle it with some specific logic that makes sense.
 * Interrupt the thread and move on.
 
-    Thread.currentThread().interrupt();
+     Thread.currentThread().interrupt();
 
 Do not just log and ignore the exception.
 
