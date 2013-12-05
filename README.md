@@ -31,6 +31,7 @@ __"Name the 4 base collection interfaces and some of the implementations."__
 Map, Set, List, Queue...   
 ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentHashMap, Vector, Hashtable, LinkedList, Stack, TreeMap, TreeSet, LinkedHashMap, LinkedHashSet, EnumMap...   
 
+__"Compare and contrast the LinkedList and ArrayList?"__  
 __"What do you understand Big O notation to be?"__  
 A way of denoting how well an algorithm performs. A measure of complexity or performance.  
 Check out my [guide](https://github.com/ultraflynn/javonical/wiki/Big-O-Notation)
