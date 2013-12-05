@@ -21,7 +21,7 @@ Most visible first: public, protected, package private, private.
 __"What does the transient keyword do?"__  
 Stops that field from being serialized.
 
-__"What does the static keyword mean, and where can it be used?"__
+__"What does the static keyword mean, and where can it be used?"__  
 Variables, method, classes and blocks.
 
 __"Describe how memory leaks can occur in Java?"__  
