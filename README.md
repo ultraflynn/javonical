@@ -33,8 +33,7 @@ ArrayList, HashMap, HashSet, CopyOnWriteArrayList, CopyOnWriteArraySet, Concurre
 
 __"Compare and contrast the LinkedList and ArrayList?"__  
 __"What do you understand Big O notation to be?"__  
-A way of denoting how well an algorithm performs. A measure of complexity or performance.  
-Check out my [guide](https://github.com/ultraflynn/javonical/wiki/Big-O-Notation)
+[wiki](https://github.com/ultraflynn/javonical/wiki/Big-O-Notation): A way of denoting how well an algorithm performs. A measure of complexity or performance.  
 
 __"How is a HashMap implemented?"__  
 Buckets, LinkedList, hashcode, equals
