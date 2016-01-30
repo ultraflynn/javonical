@@ -4,7 +4,7 @@ As a professional freelance programmer I have sat through (and conducted) my fai
 
 Javonical is here help. It is the canonical collection of Java technical questions to save you hunting around lots of sources before that important first interview.
 
-The approach I have settled on is to group the questions under some broad headings and to express the questions as if they were being asked. I will annotate each question to make it clear what is being asked and then provide what should go into your answer. I will not be trying to give the answers verbatum because that needs to be in your words.
+The approach I have settled on is to group the questions under some broad headings and to express the questions as if they were being asked. I will annotate each question to make it clear what is being asked and then provide what should go into your answer. I will not be trying to give the answers verbatim because that needs to be in your words.
 
 I have also included some code examples because often that is the best way to understand things.
 
@@ -55,7 +55,7 @@ __"What property must the class have to be used as the key in a Map?"__
 It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
 
 ### Multithreading
-(Lets not mess about, multithreading is the single most common subject that will come up. Nevermind that in 90% of cases the role itself wont include any multithreading at all)
+(Lets not mess about, multithreading is the single most common subject that will come up. Never mind that in 90% of cases the role itself wont include any multithreading at all)
 
 __"How do you start a new thread?"__  
 __"What does the synchronized keyword do?"__  
