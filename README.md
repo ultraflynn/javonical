@@ -41,6 +41,7 @@ __"What do you understand Big O notation to be?"__
 
 __"How is a HashMap implemented?"__  
 Buckets, LinkedList, hashcode, equals
+
 In [JEP-180](http://openjdk.java.net/jeps/180) HashMap has been improved. From the original proposal:
 > The principal idea is that once the number of items in a hash bucket grows beyond a certain threshold, that bucket will switch from using a linked list of entries to a balanced tree. In the case of high hash collisions, this will improve worst-case performance from O(n) to O(log n)
 
