@@ -4,7 +4,7 @@ As a professional freelance programmer I have sat through (and conducted) my fai
 
 Javonical is here help. It is the canonical collection of Java technical questions to save you hunting around lots of sources before that important first interview.
 
-The approach I have settled on is to group the questions under some broad headings and to express the questions as if they were being asked. I will annotate each question to make it clear what is being asked and then provide what should go into your answer. I will not be trying to give the answers verbatum because that needs to be in your words.
+The approach I have settled on is to group the questions under some broad headings and to express the questions as if they were being asked. I will annotate each question to make it clear what is being asked and then provide what should go into your answer. I will not be trying to give the answers verbatim because that needs to be in your words.
 
 I have also included some code examples because often that is the best way to understand things.
 
@@ -42,6 +42,12 @@ __"What do you understand Big O notation to be?"__
 __"How is a HashMap implemented?"__  
 Buckets, LinkedList, hashcode, equals
 
+In [JEP-180](http://openjdk.java.net/jeps/180) HashMap has been improved. From the original proposal:
+> The principal idea is that once the number of items in a hash bucket grows beyond a certain threshold, that bucket will switch from using a linked list of entries to a balanced tree. In the case of high hash collisions, this will improve worst-case performance from O(n) to O(log n)
+
+More information from Tomasz Nurkiewicz [HashMap improvements](http://www.nurkiewicz.com/2014/04/hashmap-performance-improvements-in.html)
+
+
 ### Error Handling
 __"What is the different between a checked and an unchecked exception?"__  
 __"Explain what the 'finally' block does"__  
@@ -55,7 +61,7 @@ __"What property must the class have to be used as the key in a Map?"__
 It must be immutable otherwise the wrong bucket will be searched during a lookup in the Map.
 
 ### Multithreading
-(Lets not mess about, multithreading is the single most common subject that will come up. Nevermind that in 90% of cases the role itself wont include any multithreading at all)
+(Lets not mess about, multithreading is the single most common subject that will come up. Never mind that in 90% of cases the role itself wont include any multithreading at all)
 
 __"How do you start a new thread?"__  
 __"What does the synchronized keyword do?"__  
