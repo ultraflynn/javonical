@@ -26,7 +26,7 @@ Variables, method, classes and blocks.
 
 __"Describe how memory leaks can occur in Java?"__  
 __"What class does Java provide that can be used to avoid memory leaks?"__  
-[WeakReference](https://weblogs.java.net/blog/2006/05/04/understanding-weak-references)  
+[WeakReference](https://web.archive.org/web/20110303225354/http://weblogs.java.net/blog/2006/05/04/understanding-weak-references)  
 
 __"What is an enum and how do you use one?"__  
 
