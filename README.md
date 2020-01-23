@@ -180,7 +180,7 @@ __"How would you lazy load the instance in a singleton?"__
 ### Testing
 __"How do you test your code?"__  
 __"Could you name some mocking frameworks?"__  
-[EasyMock](http://easymock.org/), [JMock](http://jmock.org/), [Mockito](https://github.com/mockito/mockito), [JMockit](https://code.google.com/p/jmockit/)
+[EasyMock](http://easymock.org/), [JMock](http://jmock.org/), [Mockito](https://github.com/mockito/mockito), [JMockit](https://jmockit.github.io/)
 
 __"Describe the benefits of using mocking framework?"__  
 __"Explain why dependency injection is important when mocking"__   
