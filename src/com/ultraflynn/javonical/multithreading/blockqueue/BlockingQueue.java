@@ -20,7 +20,7 @@ public final class BlockingQueue<T>
         return null;
       }
     }
-    return queue.remove();
+    return queue.poll();
   }
 
   public synchronized void push(T element)
