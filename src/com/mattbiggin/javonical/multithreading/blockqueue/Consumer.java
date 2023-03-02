@@ -1,28 +1,25 @@
-package com.ultraflynn.javonical.multithreading.blockqueue;
+package com.mattbiggin.javonical.multithreading.blockqueue;
 
 import java.util.concurrent.CountDownLatch;
 
-public final class Consumer implements Runnable
-{
+public final class Consumer implements Runnable {
   private final BlockingQueue<Message> queue;
   private final CountDownLatch ready;
   private final long delay;
   private volatile boolean keepRunning = true;
 
-  public Consumer(BlockingQueue<Message> queue, CountDownLatch ready, long delay)
-  {
+  public Consumer(final BlockingQueue<Message> queue, final CountDownLatch ready, final long delay) {
     this.queue = queue;
     this.ready = ready;
     this.delay = delay;
   }
 
-  public void run()
-  {
+  public void run() {
     ready.countDown();
 
     try {
       while (keepRunning) {
-        Message message = queue.pop();
+        final Message message = queue.pop();
         if (message == Message.POISON) {
           keepRunning = false;
         } else {
@@ -30,7 +27,7 @@ public final class Consumer implements Runnable
           Thread.sleep(delay);
         }
       }
-    } catch (InterruptedException e) {
+    } catch (final InterruptedException e) {
       e.printStackTrace();
     }
   }

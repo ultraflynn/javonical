@@ -1,4 +1,4 @@
-package com.ultraflynn.javonical.algorithms.factorial;
+package com.mattbiggin.javonical.algorithms.factorial;
 
 import org.junit.Ignore;
 import org.junit.Test;

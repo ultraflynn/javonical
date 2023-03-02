@@ -1,4 +1,4 @@
-package com.ultraflynn.javonical.multithreading.blockqueue;
+package com.mattbiggin.javonical.multithreading.blockqueue;
 
 public final class Message
 {
@@ -6,12 +6,12 @@ public final class Message
 
   public final String payload;
 
-  private Message(String payload)
+  private Message(final String payload)
   {
     this.payload = payload;
   }
 
-  public static Message valueOf(String payload)
+  public static Message valueOf(final String payload)
   {
     return new Message(payload);
   }

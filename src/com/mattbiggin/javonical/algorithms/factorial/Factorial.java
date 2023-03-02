@@ -1,4 +1,4 @@
-package com.ultraflynn.javonical.algorithms.factorial;
+package com.mattbiggin.javonical.algorithms.factorial;
 
 public final class Factorial
 {
